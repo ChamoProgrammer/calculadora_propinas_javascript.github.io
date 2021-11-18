@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Praise&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none; border: none;
+  text-transform:capitalize;
+  transition: all .2s linear;
+}
+html{
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+    background: #20003a;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #09002b, #08002b);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #09002b, #08002b);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  #container {
+    height: 555px;
+    width: 420px;
+    margin: 30px auto;
+    background: #000000;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+  
+  h1 {
+    background: #070042;
+    color: #fffffb;
+    margin: 0;
+    padding: 20px 52px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Dancing Script', cursive;
+  }
+  
+  p {
+    color: #eeff00;
+    margin: 5px auto;
+    text-transform: capitalize;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  form input[type="text"] {
+    width: 90px;
+    padding-left: 20px;
+    border: #070042 1px solid;
+  }
+  
+  input {
+    padding-left: 20px;
+    width: 90px;
+    border: #070042 1px solid;
+  }
+  
+  #billamt {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    border-radius: 15px;
+  }
+  
+  /* #billamt:focus {
+    background: #fff;
+    border: 3px solid #2980b9;
+    outline: none;
+  } */
+  
+  #peopleamt {
+    width: 60%;
+    padding: 5px 5px 8px 8px;
+    margin-left: 90px;
+    color: #000000;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    font-size: 14px;
+    border-radius: 15px;
+  }
+  
+  .dollarSign {
+    display: inline;
+  }
+  
+  #serviceQual {
+    padding: 13px 13px 20px 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: 'Praise', cursive;
+    color: #000000;
+    border-radius: 15px;
+    
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-family: 'Praise', cursive;
+    display: block;
+    margin: 30px auto;
+    background: #AD133A;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 35px;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+  }
+  
+  button:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  #totalTip {
+    font-size: 30px;
+    margin-top: 5px;
+    text-align: center;
+    color: #f7f7f7;
+  }
+  
+  #totalTip:before {
+    content: "calculadora de propinas";
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  #totalTip sup {
+    font-size: 20px;
+    top: 18px;
+  }
+  
+  #totalTip small {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+    margin: 8px;  
+  }
+
+
+  
+/* hero media queries starts*/
+@media screen and (max-width: 547px)    {
+  #container {
+    height: 455px;
+    width: 320px;
+  }
+  
+  h1 {
+    padding: 10px 32px;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+  }
+  
+  form input[type="text"] {
+    width: 60px;
+    padding-left: 20px;
+  }
+  
+  input {
+    padding-left: 10px;
+    width: 10px;
+  }
+  
+  #billamt {
+    font-size: 12px;
+    color: #000000;
+  }
+
+  #peopleamt {
+    margin-left: 90px;
+    font-size: 12px;
+  }
+  
+  #serviceQual {
+    padding: 10px 8px 10px 10px;
+    font-size: 15px;
+    
+  }
+  
+  button {
+    margin: 15px auto;
+    width: 100px;
+    font-size: 20px;
+  }
+
+  
+  #totalTip {
+    font-size: 15px;
+  }
+  
+  #totalTip:before {
+    content: "calculadora de propinas";
+    font-size: 15px;
+  }
+  
+  #totalTip sup {
+    font-size: 10px;
+  }
+  
+  #totalTip small {
+    font-size: 10px;
+  }
+
+
+  
+}
+/* hero media queries ends*/

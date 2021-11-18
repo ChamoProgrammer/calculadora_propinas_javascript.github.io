@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./tip_calculator.css">
+    <title>calculadora de propinas</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1>calculadora de propinas</h1>
+        <div id="calculator">
+      
+      
+          <form>
+            <p>cuanto fue su factura...?
+              <p>
+                <input id="billamt" type="text" placeholder="total de la factura...🤑">
+      
+                <p>¿Cómo estuvo tu servicio?
+                  <p>
+                    <select id="serviceQual">
+                  <option disabled selected value="0">escoja una opcion</option>
+                  <option value="0.3">30&#37; &#45;sobresale 😲</option>
+                  <option value="0.2">20&#37; &#45;bueno 👌</option>
+                  <option value="0.15">15&#37; &#45;estuvo bueno 🆗</option>
+                  <option value="0.1">10&#37; &#45;malo 😫</option>
+                  <option value="0.05">5&#37; &#45;terrible 🤮😱</option>
+              </select>
+      
+          </form>
+          <p>¿Cuántas personas comparten la factura?</p>
+          <input id="peopleamt" type="text" placeholder="numero de personas...👨‍👦‍👦">
+          <button type="button" id="calculate">Calcular!</button>
+      
+        </div>
+        <!--calculator end-->
+        <div id="totalTip">
+          <sup>Q.</sup><span id="tip">0.00</span>
+          <small id="each">👆debe aportar cada uno👆</small>
+        </div>
+        <!--totalTip end-->
+      
+      </div>
+      <!--container end-->
+      
+      <script type="text/javascript" src="tip_calculator.js"></script>
+    
+</body>
+</html>
